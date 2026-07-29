@@ -1,3 +1,5 @@
+adaptação do meu projeto em linguagem python
+
 # Sheets Sync API
 
 API em **Node.js + Express** que sincroniza dados do **SQL Server** com o **Google Sheets** — endpoints REST + job agendado com `node-cron`.
