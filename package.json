@@ -1,0 +1,25 @@
+{
+  "name": "sheets-sync-api",
+  "version": "1.0.0",
+  "description": "API em Node.js que sincroniza dados do SQL Server com Google Sheets - versao Node de um pipeline mantido em producao com Python",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["node", "express", "mssql", "google-sheets", "rpa", "sync"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mssql": "^11.0.1",
+    "google-spreadsheet": "^4.1.4",
+    "google-auth-library": "^9.14.1",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "winston": "^3.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

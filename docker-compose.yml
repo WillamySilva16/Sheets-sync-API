@@ -1,0 +1,12 @@
+services:
+  sheets-sync-api:
+    build: .
+    container_name: sheets-sync-api
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./credentials:/app/credentials:ro
+      - ./logs:/app/logs
